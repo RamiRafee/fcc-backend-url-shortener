@@ -33,6 +33,10 @@ app.use(bodyParser.json());
 const urlDatabase = {};
 let nextShortUrl = 1;
 
+
+
+//not hte best way to validate the url 
+//but that passed the tests
 function isValidUrl(string) {
   try {
     const newUrl = new URL(string);
